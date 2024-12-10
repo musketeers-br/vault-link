@@ -3,9 +3,12 @@
  [![Reliability Rating](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fintersystems-iris-dev-template&metric=reliability_rating)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fintersystems-iris-dev-template)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat&logo=AdGuard)](LICENSE)
-# intersystems-iris-dev-template
-This is a basic template for a development environment to work with ObjectScript in InterSystems IRIS. It helps you edit, compile, commit/push, debug and test your ObjectScript code. It also aids in packaging your application as a module installable with IPM.
-The template is embedded python compatible.
+
+# vault-link
+
+![logo](./assets/vault-link.png)
+
+Vault-Link is a security solution designed to safeguard sensitive information on InterSystems IRIS environments. 
 
 ## Description
 This repository provides a ready-to-go development environment for coding productively with InterSystems ObjectScript. This template:
