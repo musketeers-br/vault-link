@@ -2,19 +2,18 @@ ARG IMAGE=intersystemsdc/irishealth-community:2020.3.0.200.0-zpm
 ARG IMAGE=intersystemsdc/iris-community:2020.4.0.547.0-zpm
 ARG IMAGE=containers.intersystems.com/intersystems/iris:2021.1.0.215.0
 ARG IMAGE=intersystemsdc/irishealth-community
-ARG IMAGE=intersystemsdc/iris-community
 ARG IMAGE=intersystemsdc/iris-community:preview
+ARG IMAGE=intersystemsdc/iris-community
 FROM $IMAGE as builder
 
 WORKDIR /home/irisowner/dev
 
-## install git
-## USER root
-##RUN apt update && apt-get -y install git
-##USER ${ISC_PACKAGE_MGRUSER}
+USER root
+RUN apt update && apt-get -y install curl
+USER ${ISC_PACKAGE_MGRUSER}
 
 ARG TESTS=0
-ARG MODULE="dc-sample"
+ARG MODULE="vault-link"
 ARG NAMESPACE="IRISAPP"
 
 ## Embedded Python environment
