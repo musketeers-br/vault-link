@@ -14,7 +14,9 @@ Vault-Link is a security solution designed to safeguard sensitive information on
 
 Vault-Link is a security solution designed to safeguard sensitive information on InterSystems IRIS environments. 
 
-It is a wrapper to access secrets stored into key vaults.
+It is a wrapper to access secrets stored into key vaults. Here we are using [Hashicorp Vault Community](https://www.vaultproject.io/) as a key vault.
+
+This project was inspired in [this idea from InterSystems Ideas portal](https://ideas.intersystems.com/ideas/DP-I-179).
 
 ## Features
 
