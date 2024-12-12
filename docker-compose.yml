@@ -7,6 +7,7 @@ services:
       target: final
     restart: always
     command: --check-caps false --ISCAgent false
+    container_name: vault-link-iris-1
     ports:
       - 1973:1972
       - 52774:52773
@@ -15,29 +16,9 @@ services:
       - ./:/home/irisowner/dev
     networks:
       - iris_vault_network
-
-  vault:
-    image: hashicorp/vault
-    container_name: vault-new-1
     environment:
-      VAULT_ADDR: "http://localhost:8200"
-      VAULT_API_ADDR: "http://localhost:8200"
-      VAULT_ADDRESS: "http://localhost:8200"
-    ports:
-      - "18200:8200"
-      - "18201:8201"
-    restart: always
-    volumes:
-      - ./hashicorp/vault/logs:/vault/logs/:rw
-      - ./hashicorp/vault/data:/vault/data/:rw
-      - ./hashicorp/vault/config:/vault/config/:rw
-      - ./hashicorp/vault/certs:/certs/:rw
-      - ./hashicorp/vault/file:/vault/file/:rw
-    cap_add:
-      - IPC_LOCK
-    entrypoint: vault server -config /vault/config/config.hcl
-    networks:
-      - iris_vault_network
+      VAULT_LINK_HASHICORP_VAULT_TOKEN: "$VAULT_LINK_HASHICORP_VAULT_TOKEN"
+      VAULT_LINK_HASHICORP_VAULT_BASE_URL: "$VAULT_LINK_HASHICORP_VAULT_BASE_URL"
 
 networks:
   iris_vault_network:

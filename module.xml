@@ -3,12 +3,14 @@
   <Document name="vault-link.ZPM">
     <Module>
       <Name>vault-link</Name>
-      <Version>2.0.8</Version>
+      <Version>1.0.0</Version>
       <Description>Wrapper to access secrets stored into key vaults</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="dc.sample.PKG"/>
-      <UnitTest Name="/tests" Package="dc.sample.unittests" Phase="test"/>
+      <Resource Name="dc.musketeers.vaultlink.PKG"/>
+      <UnitTest Name="/tests" Package="dc.musketeers.vaultlink.unittests" Phase="test"/>
+      <!-- <Resource Name="dc.sample.PKG"/> -->
+      <!-- <UnitTest Name="/tests" Package="dc.sample.unittests" Phase="test"/> -->
     </Module>
   </Document>
 </Export>
