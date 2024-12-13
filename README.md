@@ -16,12 +16,12 @@ Vault-Link is a security solution designed to safeguard sensitive information on
 
 It is a wrapper to access secrets stored into key vaults. Here we are using [Hashicorp Vault Community](https://www.vaultproject.io/) as a key vault.
 
-This project was inspired in [this idea from InterSystems Ideas portal](https://ideas.intersystems.com/ideas/DP-I-179).
+This project was inspired on [this idea from InterSystems Ideas portal](https://ideas.intersystems.com/ideas/DP-I-179).
 
 ## Features
 
 * Wrapper to access secrets stored into key vaults
-* It is a wrapper to access secrets stored into key vaults
+* You can create and access secrets managed by Hashicorp Vault into InterSystems IRIS.
 
 ## Installation on your IRIS instance
 
@@ -29,6 +29,13 @@ Execute the following command to install the package into your IRIS instance:
 
 ```bash
 zpm "install vault-link"
+```
+
+After the package is installed, you have to setup some environment variables to let the vault-link package communicate with Hashicorp Vault:
+
+```bash
+export VAULT_LINK_HASHICORP_VAULT_TOKEN="<token>"
+export VAULT_LINK_HASHICORP_VAULT_BASE_URL="<the vault base url>"
 ```
 
 If you want just to test the package, follow the [#Running the demo environment](#Running-the-demo-environment) section.
@@ -59,7 +66,7 @@ cd hashicorp/vault
 docker-compose up -d
 ```
 
-Wait for the containers be ready.
+Wait for the the container be ready.
 
 Now we need to start the Hashicorp Vault container. A single configuration for it is provided at folder `./hashicorp/vault`. 
 
@@ -136,8 +143,8 @@ Now let's setup the IRIS container.
 First lets setup some environment variables used by the IRIS container. Replace &lt;token&gt; with your Hashicorp Vault token.
 
 ```bash
-export VAULT_LINK_HASHICORP_VAULT_TOKEN="<token>"
 export VAULT_LINK_HASHICORP_VAULT_BASE_URL="http://host.docker.internal:18200"
+export VAULT_LINK_HASHICORP_VAULT_TOKEN="<token>"
 ```
 
 Run the following command to build and run InterSystems IRIS in container. Make sure you are in the root of the repository.
@@ -146,6 +153,8 @@ Run the following command to build and run InterSystems IRIS in container. Make 
 cd ../../
 docker-compose up -d
 ```
+
+Congrats again! You have successfully setup the InterSystems IRIS container.
 
 ## Usage
 
