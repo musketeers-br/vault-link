@@ -3,7 +3,7 @@
   <Document name="vault-link.ZPM">
     <Module>
       <Name>vault-link</Name>
-      <Version>1.0.2</Version>
+      <Version>1.0.3</Version>
       <Description>Wrapper to access secrets stored into key vaults</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
