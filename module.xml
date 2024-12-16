@@ -9,8 +9,7 @@
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="dc.musketeers.vaultlink.PKG"/>
       <UnitTest Name="/tests" Package="dc.musketeers.vaultlink.unittests" Phase="test"/>
-      <!-- <Resource Name="dc.sample.PKG"/> -->
-      <!-- <UnitTest Name="/tests" Package="dc.sample.unittests" Phase="test"/> -->
+      <FileCopy Name="/python" Target="${MGRDIR}/python/"/>
     </Module>
   </Document>
 </Export>
