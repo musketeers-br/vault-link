@@ -1,6 +1,6 @@
  [![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://openexchange.intersystems.com/package/intersystems-iris-dev-template)
- [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=musketeers-br%2Fvault-link&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=musketeers-br%2Fvault-link)
- [![Reliability Rating](https://community.objectscriptquality.com/api/project_badges/measure?project=musketeers-br%2Fvault-link&metric=reliability_rating)](https://community.objectscriptquality.com/dashboard?id=musketeers-br%2Fvault-link)
+ [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community__vault-link&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community__vault-link)
+ [![Reliability Rating](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community__vault-link&metric=reliability_rating)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community__vault-link)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat&logo=AdGuard)](LICENSE)
 
