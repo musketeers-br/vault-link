@@ -224,3 +224,9 @@ Set request = ##class(%Net.HttpRequest).%New()
 Do request.SetHeader("Authorization", headers("Authorization"))
 ...
 ```
+
+## Dream Team
+
+* [Henry Pereira](https://community.intersystems.com/user/henry-pereira)
+* [José Roberto Pereira](https://community.intersystems.com/user/jos%C3%A9-roberto-pereira-0)
+* [Henrique Dias](https://community.intersystems.com/user/henrique-dias-2)
